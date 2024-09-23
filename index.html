@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="dygraphs.js"></script> 
+<link rel="stylesheet" type="text/css" href="dygraphs.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="drygraphs"></div>
+    <script type="text/javascript">
+        Dygraph.onDOMready(function onDOMready() {
+          g2 = new Dygraph(
+            document.getElementById("drygraphs"),
+            "temperatures.csv", // path to CSV file
+            {}                  // options
+          );
+        });
+        </script>
+</body>
+</html>
